@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0 0;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    background: #f8f9fa;
+   
+}
+.principal{
+    background-color: #a0bed0;
+    color:white;
+    padding:2.5%;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.principal__menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.principal__menu-item{
+    margin-right: 5%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.container{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: baseline;
+    align-items: center;
+    background-image: url(../img/foto-banner.jpg);
+    height: 100vh;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+    
+    
+}
+
+.container:hover {
+    filter: grayscale(0%);
+    transition: .5s ease-in-out;
+   
+ } 
+  
+.container__titulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 105px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin-top: 90px;
+    color: white;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+
+    
+}
+
+.container__texto{
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    opacity: .7;
+
+
+}
+
+.container__btn{
+    border: 1px solid #829dad;
+    border-radius: 5px;
+    background-color: #829dad;
+    color:white;
+    padding: 20px;
+    width: 215px;;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.principal__menu-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .principal__menu-mobile {
+        display: block;
+    }
+    .principal__menu-item{
+        display:none;
+    }
+
+}
+
