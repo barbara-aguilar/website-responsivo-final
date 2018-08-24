@@ -1,12 +1,15 @@
+/*RESET*/
+
 *{
     box-sizing: border-box;
     margin: 0 0;
+    padding: 0;
 }
 
 body{
     font-family: 'Varela Round', sans-serif;
-    background: #f8f9fa;
-   
+    
+/*main*/   
 }
 .principal{
     background-color: #a0bed0;
@@ -20,6 +23,7 @@ body{
 .principal__menu{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .principal__menu-item{
@@ -42,6 +46,7 @@ a{
     align-items: center;
     background-image: url(../img/foto-banner.jpg);
     height: 100vh;
+    opacity: .7;
     background-size: cover;
     filter: grayscale(100%);
     transition: .5s ease-in-out;
@@ -60,8 +65,9 @@ a{
     font-size: 105px;
     text-transform: uppercase;
     letter-spacing: 15px;
-    margin-top: 90px;
+    margin-top: 150px;
     color: white;
+    text-align: center;
     background: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0));
   -webkit-background-clip: text ;
   -webkit-text-fill-color: transparent;
@@ -73,8 +79,7 @@ a{
     font-size: 22px;
     align-items: center;
     text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: white;
     opacity: .7;
 
@@ -98,13 +103,159 @@ a{
     display: none;
 }
 
-@media (max-width: 768px) {
-    .principal__menu-mobile {
-        display: block;
+
+/*about*/
+.about{
+    background-color: black;
+    height: 250px;
+   
+
+} 
+
+.about__conteudo{
+    margin: 0 auto;
+    width:55%;
+}
+.about__conteudo__titulo{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    padding:6%;
+}
+
+.about__conteudo__texto{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    line-height: 25px;
+    opacity: 0.7;
+}
+/*destination geral*/
+.destination__sib{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 120px; 
+}
+/*destination siberia*/
+.destination__sib img{
+    width: 55vw;
+    height: auto;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+    
+}
+.destination__sib img:hover {
+    filter: grayscale(0%);
+    transition: .5s ease-in-out;
+   
+ } 
+
+.destination__sib__conteudo{
+    align-self:center;
+    height: 120px;
+    
+    border-left: 8px solid  #a0bed0; 
+}
+.destination__sib__titulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.8px;
+    padding: 0 10px;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.destination__sib__texto{
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    color: black;
+    opacity: .5;
+}
+/*destination groelandia antartida imagens*/
+
+.destination__box {
+     
+    width: 80vw;
+    margin: 50px auto 0 auto;
+}
+
+.destination__groe{
+    display: flex;
+    align-items: center;
+    width:80vw;
+    background-color: black;
+    height: 370px;
+
+}
+
+.destination__ant{
+    display: flex;
+    align-items: center;
+    width:80vw;
+    background-color: black;
+    height: 370px;
+}
+
+
+.destination__groe img, .destination__ant img {
+    max-width:560px;
+    width: 547px;
+    height: inherit;
+
+}
+.destination__groe__img, .destination__ant__img{
+    height: 370px;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    .container__titulo{
+        font-size: 90px;
+        letter-spacing: 2px;
     }
-    .principal__menu-item{
-        display:none;
+    .container__texto{
+        font-size: 20px;
+    }
+    .about{
+        height: 350px;
+        
+    }
+    .container__texto-quebra-de-linha{
+        display: none;
     }
 
 }
 
+@media (max-width: 420px) {
+
+    .container__titulo{
+        font-size: 65px;
+        letter-spacing: 1px;
+    }
+    .principal__menu-mobile {
+        display: block;        
+    }
+    .principal__menu-item{
+        display:none;
+    }
+    .about{
+        height: 490px;
+        
+    }
+    .about__conteudo{
+        padding-top: 45px;
+        width: 85%;
+    }
+
+}
