@@ -207,11 +207,95 @@ a{
     max-width:560px;
     width: 547px;
     height: inherit;
+ }
 
-}
 .destination__groe__img, .destination__ant__img{
     height: 370px;
 }
+
+.destination__groe img{
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+.destination__groe img:hover{
+    filter: grayscale(0%);
+    transition: .5s ease-in-out;
+} 
+
+
+.destination__ant img{
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+}
+
+.destination__ant img:hover {
+    filter: grayscale(0%);
+    transition: .5s ease-in-out;
+}
+
+/*destination groelandia antartida conteúdos*/
+.destination__groe__titulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    padding: 0 10px;
+    margin-left: 40px;
+    vertical-align: center;
+    color: white;
+}
+
+.destination__groe__texto{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 25px;
+    color: white;
+    opacity: .5;
+   
+}
+
+.destination_groe_hr{
+    border: 2px solid #36b0e0;
+    width: 150px;
+    margin-left: 49px;
+    margin-top: 10px;   
+
+}
+
+.destination__ant__titulo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    padding: 0 10px;
+    margin-left: 394px;
+    color: white;
+    
+}
+
+.destination__ant__texto{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 25px;
+    color: white;
+    opacity: .5;
+    text-align: right;
+   
+}
+
+.destination_ant_hr{
+    border: 2px solid #36b0e0;
+    width: 150px;
+    margin-left: 357px;
+    margin-top: 10px;   
+
+}
+
 
 
 
